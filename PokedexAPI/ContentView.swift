@@ -8,6 +8,7 @@ struct ContentView: View {
 
     var body: some View {
 
+        // navegacion entre la lista de Pokemon y sus detalles
         NavigationStack {
 
             VStack {
