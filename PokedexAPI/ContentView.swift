@@ -72,6 +72,11 @@ struct ContentView: View {
                         }
                     }
                     .listStyle(.plain)
+                    
+                    // permite actualizar la lista de Pokemon
+                    .refreshable {
+                        await viewModel.fetchPokemon()
+                    }
                 }
             }
             .navigationTitle("Pokedex")
